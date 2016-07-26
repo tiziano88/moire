@@ -2,4 +2,4 @@
 git checkout gh-pages
 git merge master
 elm make main.elm
-#git checkout master
+git checkout master
