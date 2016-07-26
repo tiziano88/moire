@@ -5,6 +5,7 @@ set -e
 
 elm make main.elm
 git checkout gh-pages
-git merge master -m 'merge'
+git add 'index.html'
+#git merge master -m 'merge'
 git commit -am 'make'
 git checkout master
