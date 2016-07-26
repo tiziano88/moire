@@ -3,9 +3,10 @@
 # Exit on error.
 set -e
 
-elm make main.elm
-git checkout gh-pages
-git add -f 'index.html'
+elm make main.elm --output=dist/index.html
+git subtree push --prefix dist origin gh-pages
+#git checkout gh-pages
+#git add -f 'index.html'
 #git merge master -m 'merge'
-git commit -am 'make'
-git checkout master
+#git commit -am 'make'
+#git checkout master
