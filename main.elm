@@ -27,7 +27,6 @@ init = ({tick = 0}, Cmd.none)
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
   case msg of
-    Nop -> (model, Cmd.none)
     Tick _ -> ({ model | tick = model.tick + 1 }, Cmd.none)
 
 
