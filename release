@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# Exit on error.
+set -e
+
 elm make main.elm
 git checkout gh-pages
 git merge master -m 'merge'
