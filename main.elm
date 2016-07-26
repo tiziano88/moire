@@ -66,4 +66,5 @@ view model =
         ]
       ]
     , Html.text (toString model)
+    , Html.text "test"
     ]
